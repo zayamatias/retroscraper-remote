@@ -3,8 +3,7 @@ from re import findall,sub,search
 from xml.sax.saxutils import escape
 from sys import exit as sysexit
 import httpimport
-url = "https://github.com/zayamatias/retroscraper-remote"
-with httpimport.remote_repo(url):
+with httpimport.github_repo('zayamatias', 'retroscraper-remote', ref='master'):
     from checksums import getChecksums
 
 from shutil import copyfile,rmtree
