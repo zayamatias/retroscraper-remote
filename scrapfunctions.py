@@ -685,7 +685,7 @@ def getFileInfo(file,system,companies,emptyGameTag,apikey,uuid,q,sq,config,loggi
         sgameid = str(result['game']['id'])
     except:
         sgameid ='NOID'
-    thisTag = thisTag.replace('$NAME',escape(gameName)+','+sgameid+','+mysha1)
+    thisTag = thisTag.replace('$NAME',escape(gameName))
     description = 'Description for this game is empty!'
     founddesc = False
     if result['game']['synopsis']:
