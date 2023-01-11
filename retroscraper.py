@@ -2,7 +2,7 @@ import os
 import sys
 import argparse
 import httpimport
-url = "https://github.com/zayamatias/retroscraper-rpie"
+url = "https://github.com/zayamatias/retroscraper-remote"
 with httpimport.remote_repo(url):
     import scrapfunctions
     import apicalls
